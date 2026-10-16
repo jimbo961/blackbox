@@ -4,68 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BlackBox Studio — Детейлинг и тонирование в Новокуйбышевске | ул. Егорова, 23</title>
-  <meta name="description" content="Студия премиального детейлинга и тонирования BlackBox в Новокуйбышевске. ул. Егорова, 23. Тонировка по ГОСТ, керамика, полировка и защита кузова.">
+  <meta name="description" content="Студия детейлинга и тонирования BlackBox в Новокуйбышевске. Тонировка по ГОСТ, полировка, керамика 9H, антигравийная защита. ул. Егорова, 23.">
 
-  <!-- Google Fonts -->
+  <!-- Шрифты -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind & Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
     .bg-tech-grid {
-      background-size: 38px 38px;
+      background-size: 36px 36px;
       background-image: 
-        linear-gradient(to right, rgba(6, 182, 212, 0.05) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+        linear-gradient(to right, rgba(6, 182, 212, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(6, 182, 212, 0.04) 1px, transparent 1px);
     }
     .radial-cyan-glow {
-      background: radial-gradient(circle at 50% -10%, rgba(6, 182, 212, 0.22) 0%, rgba(16, 185, 129, 0.07) 45%, transparent 75%);
+      background: radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.2) 0%, rgba(16, 185, 129, 0.05) 50%, transparent 80%);
     }
-    .premium-glass-card {
-      background: linear-gradient(180deg, rgba(20, 24, 32, 0.95) 0%, rgba(12, 14, 18, 0.98) 100%);
+    .premium-card {
+      background: linear-gradient(180deg, rgba(20, 24, 33, 0.85) 0%, rgba(12, 14, 18, 0.95) 100%);
     }
   </style>
 </head>
-<body class="bg-[#0a0a0c] text-zinc-100 font-sans antialiased selection:bg-cyan-500 selection:text-black min-h-screen relative pb-28 md:pb-12">
+<body class="bg-[#090a0d] text-zinc-100 font-sans antialiased selection:bg-cyan-500 selection:text-black min-h-screen relative">
 
   <div class="fixed inset-0 bg-tech-grid pointer-events-none z-0"></div>
-  <div class="fixed top-0 left-0 right-0 h-[600px] radial-cyan-glow pointer-events-none z-0"></div>
+  <div class="fixed top-0 left-0 right-0 h-[650px] radial-cyan-glow pointer-events-none z-0"></div>
 
-  <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-[#0a0a0c]/90 border-b border-zinc-800/80 transition-all">
+  <!-- Хедер -->
+  <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-[#090a0d]/90 border-b border-zinc-800 transition-all">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative z-10">
       <a href="#" class="flex items-center gap-3.5 group">
         <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-cyan-400 via-teal-500 to-emerald-600 flex items-center justify-center text-black font-black shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform border border-cyan-300/40">
           <i data-lucide="shield" class="w-6 h-6 stroke-[2.3]"></i>
         </div>
         <div class="flex flex-col">
-          <div class="flex items-center gap-1.5 leading-tight mb-1">
+          <div class="flex items-center gap-2 leading-tight mb-1">
             <span class="text-base sm:text-lg font-black tracking-wider uppercase font-mono text-white">
               BLACKBOX <span class="text-cyan-400">STUDIO</span>
             </span>
-            <span class="text-[9px] px-1.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-sans font-bold tracking-widest uppercase">NOVOKUYBYSHEVSK</span>
+            <span class="text-[9px] px-1.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-sans font-bold tracking-widest uppercase">НОВОКУЙБЫШЕВСК</span>
           </div>
-          <span class="text-[10px] tracking-wider uppercase text-zinc-300 font-medium">Детейлинг &bull; Тонирование &bull; ул. Егорова, 23</span>
+          <span class="text-[10px] tracking-wider uppercase text-zinc-400 font-medium">ул. Егорова, 23 &bull; Ежедневно 09:00 - 20:00</span>
         </div>
       </a>
 
-      <div class="hidden lg:flex items-center gap-5 text-xs text-zinc-200">
-        <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-zinc-700/80">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          <span class="font-medium text-zinc-200">Открыто до 20:00 &bull; ул. Егорова, 23</span>
-        </div>
-      </div>
+      <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-wider font-semibold text-zinc-400">
+        <a href="#services" class="hover:text-cyan-400 transition-colors">Услуги</a>
+        <a href="#calculator" class="hover:text-cyan-400 transition-colors text-cyan-300">Калькулятор</a>
+        <a href="#advantages" class="hover:text-cyan-400 transition-colors">Преимущества</a>
+        <a href="#contacts" class="hover:text-cyan-400 transition-colors">Контакты</a>
+      </nav>
 
       <div class="flex items-center gap-3">
-        <a href="tel:+79270000000" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-cyan-300 border border-cyan-500/40 font-semibold text-xs sm:text-sm transition-all hover:border-cyan-400 shadow-sm">
+        <a href="tel:+79270000000" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-cyan-300 border border-cyan-500/40 font-semibold text-xs sm:text-sm transition-all hover:border-cyan-400 shadow-sm">
           <i data-lucide="phone-call" class="w-4 h-4 text-cyan-400"></i>
           <span>Связаться</span>
         </a>
@@ -74,69 +70,80 @@
   </header>
 
   <main class="relative z-10">
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-14 lg:pt-14 lg:pb-24">
+    <!-- Первый экран с калькулятором -->
+    <section id="calculator" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 lg:pt-14 lg:pb-24">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+        
         <div class="lg:col-span-6 space-y-6">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/15 border border-cyan-500/40 text-cyan-200 text-xs sm:text-sm font-medium">
             <span class="flex items-center text-cyan-400">
               <i data-lucide="star" class="w-4 h-4 fill-cyan-400 mr-1"></i>
-              <strong class="font-bold">★ 5.0 на Яндекс Картах</strong>
+              <strong class="font-bold">Рейтинг 5.0 на Картах</strong>
             </span>
-            <span class="text-zinc-500">&bull;</span>
-            <span class="text-zinc-200">Новокуйбышевск</span>
+            <span class="text-zinc-600">&bull;</span>
+            <span class="text-zinc-300">Новокуйбышевск</span>
           </div>
 
-          <h1 class="text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight text-white leading-[1.15]">
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-[1.15]">
             Премиальный детейлинг и тонирование <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400">в Новокуйбышевске</span>
           </h1>
 
           <p class="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-xl font-normal">
-            Профессиональная защита кузова, восстановительная полировка, оклейка пленками и тонирование по ГОСТ. Гарантия качества на ул. Егорова, 23.
+            Восстановительная полировка, керамические составы 9H, бронепленки и профессиональное тонирование стекол по ГОСТ. Гарантия на работы в официальном заказ-наряде.
           </p>
 
-          <div class="flex flex-wrap items-center gap-4 pt-2">
-            <button onclick="scrollToCalc()" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-black font-black text-xs sm:text-sm uppercase tracking-wider transition-all shadow-lg shadow-cyan-500/25 active:scale-95 flex items-center justify-center gap-2">
-              <i data-lucide="calculator" class="w-4 h-4 text-black"></i>
-              <span>Рассчитать стоимость</span>
-            </button>
+          <div class="grid grid-cols-3 gap-3 pt-2">
+            <div class="p-3.5 rounded-xl bg-zinc-900/80 border border-zinc-800">
+              <div class="text-cyan-400 font-mono font-bold text-lg mb-0.5">100%</div>
+              <div class="text-[11px] text-zinc-400 leading-tight">Пленки США без пузырей</div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-zinc-900/80 border border-zinc-800">
+              <div class="text-cyan-400 font-mono font-bold text-lg mb-0.5">5.0 ★</div>
+              <div class="text-[11px] text-zinc-400 leading-tight">Более 140 отзывов</div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-zinc-900/80 border border-zinc-800">
+              <div class="text-cyan-400 font-mono font-bold text-lg mb-0.5">3 года</div>
+              <div class="text-[11px] text-zinc-400 leading-tight">Гарантия на материалы</div>
+            </div>
           </div>
         </div>
 
-        <div id="calculator-section" class="lg:col-span-6">
-          <div class="p-5 sm:p-7 rounded-2xl premium-glass-card border border-zinc-800 backdrop-blur shadow-2xl relative overflow-hidden">
-            <div class="flex items-center justify-between pb-4 border-b border-zinc-800 mb-5">
+        <!-- Калькулятор -->
+        <div class="lg:col-span-6">
+          <div class="p-6 sm:p-8 rounded-2xl premium-card border border-zinc-800 shadow-2xl relative">
+            <div class="flex items-center justify-between pb-4 border-b border-zinc-800 mb-6">
               <div>
-                <div class="text-[11px] uppercase tracking-wider font-mono text-cyan-400 font-bold">Калькулятор BlackBox</div>
-                <h3 class="text-lg font-bold text-white">Расчет стоимости услуг</h3>
+                <div class="text-[11px] uppercase tracking-wider font-mono text-cyan-400 font-bold">Интерактивный расчет</div>
+                <h3 class="text-xl font-bold text-white">Калькулятор комплекса</h3>
               </div>
-              <div class="w-10 h-10 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-cyan-400">
+              <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
                 <i data-lucide="sliders" class="w-5 h-5"></i>
               </div>
             </div>
 
             <div class="mb-5">
               <label class="block text-xs uppercase tracking-wider text-zinc-300 font-semibold mb-2.5">
-                1. Выберите тип автомобиля:
+                1. Выберите кузов автомобиля:
               </label>
-              <div class="grid grid-cols-3 gap-2">
-                <button type="button" onclick="selectCarCategory('sedan')" id="car-btn-sedan" class="car-type-btn active p-3 rounded-xl border text-xs font-semibold transition-all text-center flex flex-col items-center justify-center gap-1 bg-cyan-500/20 border-cyan-400 text-cyan-200 shadow-sm">
-                  <i data-lucide="car" class="w-4 h-4"></i>
-                  <span>Седан</span>
+              <div class="grid grid-cols-3 gap-2.5">
+                <button type="button" onclick="selectCarCategory('sedan')" id="car-btn-sedan" class="car-type-btn active p-3 rounded-xl border text-xs font-semibold transition-all text-center flex flex-col items-center justify-center gap-1.5 bg-cyan-500/20 border-cyan-400 text-cyan-200 shadow-sm">
+                  <i data-lucide="car" class="w-5 h-5"></i>
+                  <span>Седан / Хэтчбек</span>
                 </button>
-                <button type="button" onclick="selectCarCategory('crossover')" id="car-btn-crossover" class="car-type-btn p-3 rounded-xl border text-xs font-semibold transition-all text-center flex flex-col items-center justify-center gap-1 bg-zinc-950 border-zinc-800 text-zinc-300 hover:border-zinc-700">
-                  <i data-lucide="car-front" class="w-4 h-4"></i>
+                <button type="button" onclick="selectCarCategory('crossover')" id="car-btn-crossover" class="car-type-btn p-3 rounded-xl border text-xs font-semibold transition-all text-center flex flex-col items-center justify-center gap-1.5 bg-zinc-950 border-zinc-800 text-zinc-400 hover:border-zinc-700">
+                  <i data-lucide="car-front" class="w-5 h-5"></i>
                   <span>Кроссовер</span>
                 </button>
-                <button type="button" onclick="selectCarCategory('suv')" id="car-btn-suv" class="car-type-btn p-3 rounded-xl border text-xs font-semibold transition-all text-center flex flex-col items-center justify-center gap-1 bg-zinc-950 border-zinc-800 text-zinc-300 hover:border-zinc-700">
-                  <i data-lucide="truck" class="w-4 h-4"></i>
+                <button type="button" onclick="selectCarCategory('suv')" id="car-btn-suv" class="car-type-btn p-3 rounded-xl border text-xs font-semibold transition-all text-center flex flex-col items-center justify-center gap-1.5 bg-zinc-950 border-zinc-800 text-zinc-400 hover:border-zinc-700">
+                  <i data-lucide="truck" class="w-5 h-5"></i>
                   <span>Внедорожник</span>
                 </button>
               </div>
             </div>
 
-            <div class="mb-5">
+            <div class="mb-6">
               <label class="block text-xs uppercase tracking-wider text-zinc-300 font-semibold mb-2.5">
-                2. Выберите услуги:
+                2. Необходимые услуги:
               </label>
               <div class="space-y-2.5">
                 <label class="flex items-center justify-between p-3.5 rounded-xl bg-zinc-950/80 border border-zinc-800 hover:border-cyan-500/40 cursor-pointer transition-all">
@@ -144,7 +151,7 @@
                     <input type="checkbox" checked id="srv-tint" onchange="calculateTotal()" class="w-4 h-4 rounded text-cyan-500 border-zinc-700 bg-zinc-900 accent-cyan-500">
                     <div>
                       <div class="text-xs sm:text-sm font-semibold text-white">Тонирование задней полусферы</div>
-                      <div class="text-[11px] text-zinc-300 mt-0.5 leading-snug">Американские металлизированные пленки с гарантией</div>
+                      <div class="text-[11px] text-zinc-400 mt-0.5">Металлизированная пленка США, без выгорания</div>
                     </div>
                   </div>
                   <div class="text-right whitespace-nowrap ml-3">
@@ -156,8 +163,8 @@
                   <div class="flex items-center gap-3">
                     <input type="checkbox" id="srv-polish" onchange="calculateTotal()" class="w-4 h-4 rounded text-cyan-500 border-zinc-700 bg-zinc-900 accent-cyan-500">
                     <div>
-                      <div class="text-xs sm:text-sm font-semibold text-white">Восстановительная полировка кузова</div>
-                      <div class="text-[11px] text-zinc-300 mt-0.5 leading-snug">Устранение голограмм, рисок и придание зеркального блеска</div>
+                      <div class="text-xs sm:text-sm font-semibold text-white">Глубокая полировка кузова</div>
+                      <div class="text-[11px] text-zinc-400 mt-0.5">Удаление паутинки, царапин и придание глянца</div>
                     </div>
                   </div>
                   <div class="text-right whitespace-nowrap ml-3">
@@ -170,7 +177,7 @@
                     <input type="checkbox" id="srv-ceramic" onchange="calculateTotal()" class="w-4 h-4 rounded text-cyan-500 border-zinc-700 bg-zinc-900 accent-cyan-500">
                     <div>
                       <div class="text-xs sm:text-sm font-semibold text-white">Керамическое покрытие 9H</div>
-                      <div class="text-[11px] text-zinc-300 mt-0.5 leading-snug">Мощный гидрофобный слой и защита заводского лака</div>
+                      <div class="text-[11px] text-zinc-400 mt-0.5">Защита от реагентов и гидрофобный эффект до 18 мес.</div>
                     </div>
                   </div>
                   <div class="text-right whitespace-nowrap ml-3">
@@ -183,15 +190,15 @@
             <div class="pt-4 border-t border-zinc-800">
               <div class="flex items-baseline justify-between mb-4">
                 <div>
-                  <span class="text-xs uppercase tracking-wider text-zinc-300 block font-semibold">Ориентировочная сумма:</span>
-                  <span class="text-xs text-zinc-400">Прайс студии BlackBox</span>
+                  <span class="text-xs uppercase tracking-wider text-zinc-400 block font-semibold">Итоговый расчет:</span>
+                  <span class="text-xs text-zinc-500">Прайс студии BlackBox</span>
                 </div>
                 <div class="text-right whitespace-nowrap">
                   <span id="calc-grand-total" class="text-3xl font-black font-mono text-white drop-shadow-[0_0_15px_rgba(6,182,212,0.35)]">5&nbsp;500&nbsp;₽</span>
                 </div>
               </div>
 
-              <button onclick="openModalWithCalculatedData()" class="w-full py-3.5 px-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-black font-extrabold text-xs uppercase tracking-wider transition-all shadow-md shadow-cyan-500/25 active:scale-95 flex items-center justify-center gap-2">
+              <button onclick="openModalWithCalculatedData()" class="w-full py-4 px-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-black font-black text-xs uppercase tracking-wider transition-all shadow-md shadow-cyan-500/25 active:scale-95 flex items-center justify-center gap-2">
                 <i data-lucide="calendar-check" class="w-4 h-4 text-black"></i>
                 <span>Зафиксировать цену и записаться</span>
               </button>
@@ -200,21 +207,122 @@
         </div>
       </div>
     </section>
+
+    <!-- Секция Услуг -->
+    <section id="services" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-zinc-800/80">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-mono uppercase text-cyan-400 font-bold tracking-widest mb-2">Направления работы</h2>
+        <h3 class="text-2xl sm:text-4xl font-extrabold text-white">Все виды ухода за авто в одном месте</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-cyan-500/40 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="sun" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Тонирование по ГОСТ</h4>
+          <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+            Тонировка задней полусферы, атермальные пленки на лобовое стекло и передние боковые, бронирование фар.
+          </p>
+          <span class="text-xs font-mono font-bold text-cyan-400">от 5 500 ₽</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-cyan-500/40 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Детейлинг полировка</h4>
+          <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+            Трехэтапная полировка пастами премиум-класса. Снятие минимального слоя лака с максимальным блеском.
+          </p>
+          <span class="text-xs font-mono font-bold text-cyan-400">от 12 000 ₽</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-cyan-500/40 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Защита кузова (Керамика & PPF)</h4>
+          <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+            Нанесение нанокерамики 9H и полиуретановой бронепленки на зоны риска (капот, бампер, фары, зеркала).
+          </p>
+          <span class="text-xs font-mono font-bold text-cyan-400">от 18 000 ₽</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция преимуществ -->
+    <section id="advantages" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-zinc-800/80">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-xs font-mono uppercase text-cyan-400 font-bold tracking-widest mb-2">Почему BlackBox Studio</h2>
+          <h3 class="text-2xl sm:text-4xl font-extrabold text-white mb-6">Педантичный подход к каждому элементу</h3>
+          
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 mt-1">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h5 class="text-sm font-bold text-white">Чистый бокс с правильным светом</h5>
+                <p class="text-xs text-zinc-400 mt-0.5">Специализированная светодиодная подсветка выявляет малейшие риски, а система очистки воздуха исключает пыль при тонировке.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 mt-1">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h5 class="text-sm font-bold text-white">Без разбора дверных карт</h5>
+                <p class="text-xs text-zinc-400 mt-0.5">В 95% случаев тонирование и полировка выполняются без вмешательства в заводскую сборку обшивки.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 mt-1">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h5 class="text-sm font-bold text-white">Официальная гарантия студии</h5>
+                <p class="text-xs text-zinc-400 mt-0.5">Выдаем гарантийный талон с указанием использованных пленок и составов.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800">
+          <div class="text-sm font-bold text-white mb-4 flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-4 h-4 text-cyan-400"></i>
+            <span>Локация и график</span>
+          </div>
+          <div class="space-y-2 text-xs text-zinc-300 mb-5">
+            <p><strong class="text-white">Адрес:</strong> Самарская обл., г. Новокуйбышевск, ул. Егорова, 23</p>
+            <p><strong class="text-white">Часы работы:</strong> Каждый день с 09:00 до 20:00 (по предварительной записи)</p>
+            <p><strong class="text-white">Телефон:</strong> +7 (927) 000-00-00</p>
+          </div>
+          <button onclick="scrollToCalc()" class="w-full py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-cyan-300 border border-cyan-500/40 text-xs font-bold transition-all">
+            Записаться на осмотр
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="border-t border-zinc-800 bg-[#08090d] text-zinc-300 text-xs py-10 relative z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-4">
+  <!-- Футер -->
+  <footer id="contacts" class="border-t border-zinc-800 bg-[#07080a] text-zinc-400 text-xs py-10 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
       <div>
         <span class="font-bold text-white font-mono uppercase">BlackBox Studio</span>
-        <p class="text-[11px] text-zinc-400">Новокуйбышевск, ул. Егорова, 23</p>
+        <p class="text-[11px] text-zinc-500 mt-0.5">Новокуйбышевск, ул. Егорова, 23</p>
       </div>
-      <div class="text-[11px] text-zinc-500">&copy; 2026 BlackBox Studio. Все права защищены.</div>
+      <div class="text-[11px] text-zinc-600">&copy; 2026 BlackBox Studio. Все права защищены.</div>
     </div>
   </footer>
 
-  <!-- Модальное окно -->
+  <!-- Модалка -->
   <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-zinc-950/85 backdrop-blur-sm">
-    <div class="relative w-full max-w-md rounded-2xl bg-[#0f121a] border border-zinc-800 p-6 sm:p-7 shadow-2xl">
+    <div class="relative w-full max-w-md rounded-2xl bg-[#0e1118] border border-zinc-800 p-6 sm:p-7 shadow-2xl">
       <button onclick="closeModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-white p-2">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
@@ -222,7 +330,7 @@
       <div class="mb-5">
         <div class="text-[11px] uppercase tracking-wider text-cyan-400 font-mono font-bold">BlackBox Studio</div>
         <h3 id="modal-service-title" class="text-xl font-bold text-white mt-1">Онлайн-запись</h3>
-        <p class="text-xs text-zinc-300 mt-1">Оставьте контактные данные для бронирования времени мастера</p>
+        <p class="text-xs text-zinc-400 mt-1">Оставьте контактные данные для бронирования времени мастера</p>
       </div>
 
       <form onsubmit="handleFormSubmit(event)" class="space-y-4">
@@ -257,7 +365,7 @@
       </div>
       <div>
         <div class="text-sm font-bold text-white">Заявка принята!</div>
-        <div class="text-xs text-zinc-300">Мастер BlackBox свяжется с вами в течение 10 минут.</div>
+        <div class="text-xs text-zinc-400">Мастер BlackBox свяжется с вами в течение 10 минут.</div>
       </div>
     </div>
   </div>
@@ -292,12 +400,12 @@
       currentCategory = category;
       document.querySelectorAll('.car-type-btn').forEach(btn => {
         btn.classList.remove('bg-cyan-500/20', 'border-cyan-400', 'text-cyan-200', 'shadow-sm');
-        btn.classList.add('bg-zinc-950', 'border-zinc-800', 'text-zinc-300');
+        btn.classList.add('bg-zinc-950', 'border-zinc-800', 'text-zinc-400');
       });
 
       const activeBtn = document.getElementById('car-btn-' + category);
       if (activeBtn) {
-        activeBtn.classList.remove('bg-zinc-950', 'border-zinc-800', 'text-zinc-300');
+        activeBtn.classList.remove('bg-zinc-950', 'border-zinc-800', 'text-zinc-400');
         activeBtn.classList.add('bg-cyan-500/20', 'border-cyan-400', 'text-cyan-200', 'shadow-sm');
       }
 
@@ -400,7 +508,7 @@
     }
 
     function scrollToCalc() {
-      const target = document.getElementById('calculator-section');
+      const target = document.getElementById('calculator');
       if (target) target.scrollIntoView({ behavior: 'smooth' });
     }
   </script>
